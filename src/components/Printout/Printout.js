@@ -6,7 +6,7 @@ const Printout = (props) => {
   return (
     <div className="printout">
         <div className="printout-logo">
-        {props.image ? <img src={props.image}/> : "Your logo"}
+        {props.image ? <img src={props.image}/> : <div class="printout-hidden">Your logo</div>}
         </div>
    
        

@@ -139,6 +139,9 @@ body {
   body * {
     visibility: hidden;
   }
+  .printout-hidden{
+    visibility: hidden !important;
+  }
   .printout,
   .printout * {
     visibility: visible;

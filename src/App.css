@@ -20,11 +20,28 @@ body {
   padding: 5px 15px 5px 15px;
   border-radius: 20px;
 }
-@page 
-{
-    size: auto;  
-    margin: 0mm;  
-} 
+.input-form input.image-upload {
+  padding-top: 8px;
+}
+.printout-logo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  max-width: 80px;
+  height: 50px;
+  z-index: 100;
+  color:black;
+}
+.printout .printout-logo img {
+ 
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+@page {
+  size: auto;
+  margin: 0mm;
+}
 .header-p {
   display: inline-block;
   margin-left: 20px;
@@ -161,6 +178,19 @@ body {
   .col-credentials p {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .printout-logo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    max-width: 250px;
+    height: 100px;
+    z-index: 100;
+  }
+  .printout .printout-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
   }
 }
 

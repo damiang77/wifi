@@ -1,13 +1,19 @@
 import React from "react";
 import wifi from "./../../img/wifi.svg";
+import logo from "./../../img/spot.png";
 import QRCode from "qrcode.react";
 
 const Printout = (props) => {
   return (
     <div className="printout">
+        <div className="printout-logo">
+        {props.image ? <img src={props.image}/> : "Your logo"}
+        </div>
+   
+       
       <div className="page-size">A4 Page</div>
       <div>
-        <img src={wifi} />
+        <img src={wifi} alt="wifi logo"/>
       </div>
       <div>
         <div className="col-credentials">

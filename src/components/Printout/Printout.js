@@ -1,6 +1,5 @@
 import React from "react";
 import wifi from "./../../img/wifi.svg";
-import logo from "./../../img/spot.png";
 import QRCode from "qrcode.react";
 
 const Printout = (props) => {

@@ -1,0 +1,316 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+body {
+  background-image: -webkit-linear-gradient(0deg, #558b2f, #7cb342);
+  background-image: -moz-linear-gradient(0deg, #558b2f, #7cb342);
+  background-image: linear-gradient(0deg, #558b2f, #7cb342);
+  color: white;
+}
+.container {
+  width: 960px;
+  height: 1000px;
+}
+
+.container h1 {
+  font-size: 48px;
+  margin-left: 7px;
+  display: inline-block;
+  background-color: black;
+  padding: 5px 15px 5px 15px;
+  border-radius: 20px;
+}
+@page 
+{
+    size: auto;  
+    margin: 0mm;  
+} 
+.header-p {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 20px;
+  padding-top: 40px;
+}
+.input-form {
+  padding-bottom: 30px;
+}
+.input-box {
+  padding-top: 15px;
+}
+.input-box input {
+  display: block;
+  margin-top: 10px;
+  height: 30px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  border: 0;
+  width: 300px;
+  padding-left: 15px;
+  line-height: 14px;
+  font-size: 12px;
+  color: #62717a;
+}
+.input-box:first-child {
+  padding-top: 0px;
+}
+
+.input-box label {
+  font-size: 14px;
+}
+
+.input-box > select {
+  margin-top: 15px;
+  display: block;
+}
+
+.col-credentials {
+  display: inline-block;
+  width: 150px;
+  max-width: 160px;
+  overflow: hidden;
+  height: 50px;
+  text-align: center;
+  font-size: 12px;
+  color: black;
+}
+.col-credentials p {
+  color: #040404;
+  font-weight: 200;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.col-credentials:first-child {
+  border-right: 2px solid #000;
+}
+.page-size {
+  position: absolute;
+  top: -18px;
+  font-size: 12px;
+  color: whitesmoke;
+  right: 0px;
+  text-align: right;
+}
+
+.printout {
+  position: relative;
+  width: 400px;
+  height: 565px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 2px black dashed;
+  justify-content: space-evenly;
+  background-color: #fff;
+}
+.qr-code {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transform: scale(0.5);
+  height: 100px;
+}
+.qr-description {
+  color: rgba(0, 0, 0, 0.4);
+}
+.printout img {
+  height: 100px;
+}
+.printout-wrapper {
+  width: 402px;
+}
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .printout,
+  .printout * {
+    visibility: visible;
+  }
+  .printout input {
+    border: none;
+  }
+  .printout {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    left: 0;
+    top: 0;
+    border: 0;
+    margin: 0;
+  }
+  .printout img {
+    height: 270px;
+  }
+
+  .qr-code {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: scale(1);
+  }
+  .col-credentials {
+    display: inline-block;
+    width: 450px;
+    max-width: 450px;
+    height: 120px;
+    text-align: center;
+    font-size: 30px;
+  }
+  .col-credentials p {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.note {
+  border: 2px dashed whitesmoke;
+  color: whitesmoke;
+  padding: 12px;
+  text-align: center;
+  font-size: 12px;
+  width: 290px;
+  font-weight: 700;
+}
+.action-btn-wrapper {
+  display: flex;
+  justify-content: center;
+
+  padding-bottom: 20px;
+}
+.action-btn {
+  background-color: #f2f2f2;
+  color: black;
+  width: 70px;
+  height: 22px;
+  border: 0;
+  font-size: 12px;
+  border-radius: 30px;
+}
+.action-btn:hover {
+  background-color: #c9c9c9;
+  cursor: pointer;
+}
+/*
+.action-btn:first-child {
+  border-radius: 30px 0px 0px 30px;
+}
+.action-btn:last-child {
+  border-radius: 0px 30px 30px 0px;
+}
+*/
+
+.dropdown {
+  display: block;
+  margin-top: 15px;
+  position: relative;
+  overflow: hidden;
+  height: 28px;
+  width: 150px;
+  background: #f2f2f2;
+  border: 1px solid;
+  border-color: white #f7f7f7 whitesmoke;
+  border-radius: 3px;
+  background-image: -webkit-linear-gradient(
+    top,
+    transparent,
+    rgba(0, 0, 0, 0.06)
+  );
+  background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+  background-image: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 0, 0, 0.06)
+  );
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.dropdown:before,
+.dropdown:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 9px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 4px dashed;
+  border-color: #888888 transparent;
+  pointer-events: none;
+}
+
+.dropdown:before {
+  border-bottom-style: solid;
+  border-top: none;
+}
+
+.dropdown:after {
+  margin-top: 7px;
+  border-top-style: solid;
+  border-bottom: none;
+}
+
+.dropdown-select {
+  position: relative;
+  width: 130%;
+  margin: 0;
+  padding: 6px 8px 6px 10px;
+  height: 28px;
+  line-height: 14px;
+  font-size: 12px;
+  color: #62717a;
+  text-shadow: 0 1px white;
+  background: #f2f2f2; /* Fallback for IE 8 */
+  background: rgba(
+    0,
+    0,
+    0,
+    0
+  ) !important; /* "transparent" doesn't work with Opera */
+  border: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+.dropdown-select:focus {
+  z-index: 3;
+  width: 100%;
+  color: #394349;
+  outline: 2px solid #49aff2;
+  outline: 2px solid -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.dropdown-select > option {
+  margin: 3px;
+  padding: 6px 8px;
+  text-shadow: none;
+  background: #f2f2f2;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Fix for IE 8 putting the arrows behind the select element. */
+
+.lt-ie9 .dropdown {
+  z-index: 1;
+}
+
+.lt-ie9 .dropdown-select {
+  z-index: -1;
+}
+
+.lt-ie9 .dropdown-select:focus {
+  z-index: 3;
+}
+
+/* Dirty fix for Firefox adding padding where it shouldn't. */
+
+@-moz-document url-prefix() {
+  .dropdown-select {
+    padding-left: 6px;
+  }
+}

@@ -24,9 +24,9 @@ const App = () => {
   }
 
   return (
-    <div className="container">
-      <div className="row">
-        <h1>Wi-Fi</h1>
+    <div className="container ">
+      <div className="row mobile-header">
+        <h1 className="logo">Wi-Fi</h1>
         <p className="header-p">password card generator</p>
       </div>
       <div className="row">

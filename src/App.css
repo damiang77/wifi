@@ -7,14 +7,36 @@ body {
   background-image: linear-gradient(0deg, #558b2f, #7cb342);
   color: white;
 }
-.container {
-  width: 960px;
-  height: 1000px;
+
+
+@media (min-width: 250px) and (max-width: 480px) {
+  .mobile-header{
+    max-height: 140px;
+  }
+  .printout{
+    max-width:330px !important;
+  }
+  .header-p{
+    padding-top: 10px !important;
+    position: relative;
+    top:-50px;
+    margin-left:0 !important;
+  }
+  .printout-wrapper{
+  width: 100% !important;
+  }
+  .action-btn-wrapper{
+    width: 100%;
+  }
+  .container {
+
+    margin:20px;
+  }
+  
 }
 
-.container h1 {
+.logo {
   font-size: 48px;
-  margin-left: 7px;
   display: inline-block;
   background-color: black;
   padding: 5px 15px 5px 15px;

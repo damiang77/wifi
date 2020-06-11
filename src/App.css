@@ -8,6 +8,10 @@ body {
   color: white;
 }
 
+.container{
+  height: 100vh;
+}
+
 
 @media (min-width: 250px) and (max-width: 480px) {
   .mobile-header{
@@ -183,7 +187,7 @@ body {
     margin: 0;
   }
   .printout img {
-    height: 270px;
+    height: 220px;
   }
 
   .qr-code {
@@ -194,20 +198,21 @@ body {
   }
   .col-credentials {
     display: inline-block;
-    width: 450px;
-    max-width: 450px;
+    width: 350px;
+    max-width: 500px;
     height: 120px;
     text-align: center;
     font-size: 30px;
   }
   .col-credentials p {
+    font-size: 26px;
     padding-left: 15px;
     padding-right: 15px;
   }
   .printout-logo {
     position: absolute;
     top: 50px;
-    left: 50px;
+    left: 20px;
     max-width: 250px;
     height: 100px;
     z-index: 100;
